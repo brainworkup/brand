@@ -1,0 +1,115 @@
+# ============================================================================
+# Concept 2: "The Lighthouse" — Warm & Supportive
+# ============================================================================
+# Tone: Empathetic, clear, navigating complexity
+# Best for: Broad audiences — parents AND attorneys
+# Name: Brainworkup
+# Tagline: Clarity through assessment
+# ============================================================================
+
+meta:
+  name:
+    full: "Brainworkup"
+    short: "Brainworkup"
+  link:
+    home: https://brainworkup.org
+    github: https://github.com/brainworkup
+
+logo:
+  images:
+    logo-light: logos/logo-transparent.png
+    logo-dark: logos/logo-transparent.png
+    favicon: logos/favicon.png
+  small: favicon
+  medium: logo-light
+  large: logo-light
+
+color:
+  palette:
+    # Primary: warm navy — serious but not sterile
+    navy: "#1D3557"
+    navy-light: "#2B4A6F"
+    navy-dark: "#142640"
+    # Accent: golden amber — warmth, clarity, the lighthouse beam
+    amber: "#F4A261"
+    amber-light: "#F8C08A"
+    amber-dark: "#D4843E"
+    # Supporting blue — softer clinical feel
+    sky: "#457B9D"
+    sky-light: "#6FA3C1"
+    # Neutrals
+    linen: "#FEFAE0"
+    parchment: "#F5EED6"
+    charcoal: "#2D3436"
+    gray: "#636E72"
+    white: "#FFFFFF"
+    black: "#1A1A2E"
+  foreground: charcoal
+  background: linen
+  primary: navy
+  secondary: amber
+  tertiary: sky
+  success: "#4CAF50"
+  info: sky-light
+  warning: amber-light
+  danger: "#E07A5F"
+  light: linen
+  dark: navy-dark
+
+typography:
+  fonts:
+    # Lato: humanist sans-serif — warm, clean, universal
+    - family: Lato
+      source: google
+      weight: [300, 400, 700, 900]
+      style: [normal, italic]
+      display: swap
+    # Source Serif 4: elegant, readable body serif
+    - family: Source Serif 4
+      source: google
+      weight: [300, 400, 600, 700]
+      style: [normal, italic]
+      display: swap
+    - family: Fira Code
+      source: google
+      weight: [400, 500]
+      style: normal
+      display: swap
+  base:
+    family: Source Serif 4
+    size: 17px
+    weight: 400
+    line-height: 1.7
+  headings:
+    family: Lato
+    weight: 700
+    line-height: 1.25
+    style: normal
+    color: navy
+  monospace:
+    family: Fira Code
+    size: 0.85em
+    weight: 400
+  monospace-inline:
+    family: Fira Code
+    size: 0.85em
+    weight: 400
+    color: navy
+    background-color: parchment
+  monospace-block:
+    family: Fira Code
+    size: 0.9em
+    weight: 400
+    color: charcoal
+    background-color: parchment
+    line-height: 1.5
+  link:
+    weight: 400
+    color: sky
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      brand-navy: "$brand-navy"
+      brand-amber: "$brand-amber"

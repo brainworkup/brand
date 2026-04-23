@@ -1,0 +1,113 @@
+# ============================================================================
+# Concept 6: "Academic Authority" — Highly Academic & Authoritative
+# ============================================================================
+# Tone: Unapologetically academic, institutional, forensic-grade
+# Best for: Forensic/legal referrals, hospital partnerships, IME work
+# Name: Brainworkup Institute of Neuropsychology
+# Tagline: Evidence-based assessment · Expert testimony · Clinical science
+# ============================================================================
+
+meta:
+  name:
+    full: "Brainworkup Institute of Neuropsychology"
+    short: "Brainworkup"
+  link:
+    home: https://brainworkup.org
+    github: https://github.com/brainworkup
+
+logo:
+  images:
+    logo-light: logos/logo-transparent.png
+    logo-dark: logos/logo-transparent.png
+    favicon: logos/favicon.png
+  small: favicon
+  medium: logo-light
+  large: logo-light
+
+color:
+  palette:
+    # Primary: Oxford navy — the most authoritative blue
+    oxford: "#002147"
+    oxford-light: "#0A3D7A"
+    oxford-dark: "#001530"
+    # Accent: academic gold — prestige, seriousness, tradition
+    gold: "#D4A843"
+    gold-light: "#E6C56E"
+    gold-dark: "#B08C2E"
+    # Neutrals: warm gray spectrum
+    white: "#FFFFFF"
+    alabaster: "#FAFAF8"
+    stone: "#E8E4DE"
+    pewter: "#9E9E9E"
+    graphite: "#4A4A4A"
+    charcoal: "#2B2B2B"
+    black: "#1A1A1A"
+  foreground: charcoal
+  background: white
+  primary: oxford
+  secondary: gold
+  tertiary: graphite
+  success: "#2E7D32"
+  info: oxford-light
+  warning: gold-light
+  danger: "#B71C1C"
+  light: alabaster
+  dark: oxford-dark
+
+typography:
+  fonts:
+    # Freight Text / Libre Baskerville: classic academic serif
+    - family: Libre Baskerville
+      source: google
+      weight: [400, 700]
+      style: [normal, italic]
+      display: swap
+    # Libre Franklin: the workhorse sans for academic institutions
+    - family: Libre Franklin
+      source: google
+      weight: [300, 400, 500, 600, 700]
+      style: [normal, italic]
+      display: swap
+    - family: IBM Plex Mono
+      source: google
+      weight: [400, 500]
+      style: normal
+      display: swap
+  base:
+    family: Libre Franklin
+    size: 16px
+    weight: 400
+    line-height: 1.6
+  headings:
+    family: Libre Baskerville
+    weight: 700
+    line-height: 1.25
+    style: normal
+    color: oxford
+  monospace:
+    family: IBM Plex Mono
+    size: 0.85em
+    weight: 400
+  monospace-inline:
+    family: IBM Plex Mono
+    size: 0.85em
+    weight: 400
+    color: oxford
+    background-color: alabaster
+  monospace-block:
+    family: IBM Plex Mono
+    size: 0.9em
+    weight: 400
+    color: charcoal
+    background-color: alabaster
+    line-height: 1.5
+  link:
+    weight: 500
+    color: oxford-light
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      brand-oxford: "$brand-oxford"
+      brand-gold: "$brand-gold"

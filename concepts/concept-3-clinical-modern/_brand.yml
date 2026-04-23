@@ -1,0 +1,112 @@
+# ============================================================================
+# Concept 3: "Clinical Modern" — Mixed
+# ============================================================================
+# Tone: Professional, evidence-based, human
+# Best for: Hospitals, credentialed referrals, parents who research
+# Name: Brainworkup Neuropsychology
+# Tagline: Pediatric & forensic neuropsychological assessment
+# ============================================================================
+
+meta:
+  name:
+    full: "Brainworkup Neuropsychology"
+    short: "Brainworkup"
+  link:
+    home: https://brainworkup.org
+    github: https://github.com/brainworkup
+
+logo:
+  images:
+    logo-light: logos/logo-transparent.png
+    logo-dark: logos/logo-transparent.png
+    favicon: logos/favicon.png
+  small: favicon
+  medium: logo-light
+  large: logo-light
+
+color:
+  palette:
+    # Primary: deep clinical blue — authoritative, trustworthy
+    blue: "#1B365D"
+    blue-light: "#2B5090"
+    blue-dark: "#0F2240"
+    # Accent: clinical green — health, growth, positive outcomes
+    green: "#4CAF50"
+    green-light: "#81C784"
+    green-dark: "#2E7D32"
+    # Neutrals: crisp, clean, clinical
+    white: "#FFFFFF"
+    ice: "#F5F7FA"
+    silver: "#E8ECF0"
+    gray: "#6B7B8D"
+    charcoal: "#2C3E50"
+    black: "#1A1A1A"
+  foreground: charcoal
+  background: white
+  primary: blue
+  secondary: green
+  tertiary: gray
+  success: green
+  info: blue-light
+  warning: "#F4A261"
+  danger: "#E74C3C"
+  light: ice
+  dark: blue-dark
+
+typography:
+  fonts:
+    # Inter: clean, modern sans — the Mayo Clinic meets tech company feel
+    - family: Inter
+      source: google
+      weight: [300, 400, 500, 600, 700]
+      style: [normal, italic]
+      display: swap
+    # IBM Plex Serif: technical precision with readability
+    - family: IBM Plex Serif
+      source: google
+      weight: [300, 400, 500, 600]
+      style: [normal, italic]
+      display: swap
+    - family: IBM Plex Mono
+      source: google
+      weight: [400, 500]
+      style: normal
+      display: swap
+  base:
+    family: Inter
+    size: 16px
+    weight: 400
+    line-height: 1.6
+  headings:
+    family: Inter
+    weight: 600
+    line-height: 1.2
+    style: normal
+    color: blue
+  monospace:
+    family: IBM Plex Mono
+    size: 0.85em
+    weight: 400
+  monospace-inline:
+    family: IBM Plex Mono
+    size: 0.85em
+    weight: 400
+    color: blue
+    background-color: ice
+  monospace-block:
+    family: IBM Plex Mono
+    size: 0.9em
+    weight: 400
+    color: charcoal
+    background-color: ice
+    line-height: 1.5
+  link:
+    weight: 500
+    color: blue-light
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      brand-blue: "$brand-blue"
+      brand-green: "$brand-green"

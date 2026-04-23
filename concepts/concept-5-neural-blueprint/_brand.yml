@@ -1,0 +1,115 @@
+# ============================================================================
+# Concept 5: "Neural Blueprint" — Mixed
+# ============================================================================
+# Tone: Smart, precise, distinctive, technical-clinical
+# Best for: Professional referrals, differentiation from competitors
+# Name: Brainworkup
+# Tagline: Mapping the developing mind
+# ============================================================================
+
+meta:
+  name:
+    full: "Brainworkup"
+    short: "Brainworkup"
+  link:
+    home: https://brainworkup.org
+    github: https://github.com/brainworkup
+
+logo:
+  images:
+    logo-light: logos/logo-transparent.png
+    logo-dark: logos/logo-transparent.png
+    favicon: logos/favicon.png
+  small: favicon
+  medium: logo-light
+  large: logo-light
+
+color:
+  palette:
+    # Primary: blueprint blue — precision, architecture, depth
+    blueprint: "#1E3A5F"
+    blueprint-light: "#2C5282"
+    blueprint-dark: "#122444"
+    # Accent: warm terracotta — human warmth against technical precision
+    terracotta: "#E8927C"
+    terracotta-light: "#F2B5A5"
+    terracotta-dark: "#C06B55"
+    # Supporting: drafting pencil tones
+    pencil: "#6C757D"
+    pencil-light: "#ADB5BD"
+    # Neutrals: clean, architectural
+    white: "#FFFFFF"
+    vellum: "#F8F6F0"
+    gridline: "#E9ECEF"
+    graphite: "#495057"
+    charcoal: "#2D3436"
+    black: "#1A1A1A"
+  foreground: charcoal
+  background: white
+  primary: blueprint
+  secondary: terracotta
+  tertiary: pencil
+  success: "#4CAF50"
+  info: blueprint-light
+  warning: terracotta-light
+  danger: "#E74C3C"
+  light: vellum
+  dark: blueprint-dark
+
+typography:
+  fonts:
+    # Barlow: geometric, modern — architectural feel without being cold
+    - family: Barlow
+      source: google
+      weight: [300, 400, 500, 600, 700]
+      style: [normal, italic]
+      display: swap
+    # Barlow Semi Condensed: compact elegance for secondary text
+    - family: Barlow Semi Condensed
+      source: google
+      weight: [300, 400, 500, 600]
+      style: [normal, italic]
+      display: swap
+    - family: JetBrains Mono
+      source: google
+      weight: [400, 500]
+      style: normal
+      display: swap
+  base:
+    family: Barlow
+    size: 16px
+    weight: 400
+    line-height: 1.6
+  headings:
+    family: Barlow
+    weight: 600
+    line-height: 1.2
+    style: normal
+    color: blueprint
+  monospace:
+    family: JetBrains Mono
+    size: 0.85em
+    weight: 400
+  monospace-inline:
+    family: JetBrains Mono
+    size: 0.85em
+    weight: 400
+    color: blueprint
+    background-color: vellum
+  monospace-block:
+    family: JetBrains Mono
+    size: 0.9em
+    weight: 400
+    color: charcoal
+    background-color: vellum
+    line-height: 1.5
+  link:
+    weight: 500
+    color: blueprint-light
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      brand-blueprint: "$brand-blueprint"
+      brand-terracotta: "$brand-terracotta"

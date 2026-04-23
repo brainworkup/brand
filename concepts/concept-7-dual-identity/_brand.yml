@@ -1,0 +1,141 @@
+# ============================================================================
+# Concept 7: "Dual Identity" — Strategic Hybrid
+# ============================================================================
+# Tone: Adapts to audience — warm for pediatric, authoritative for forensic
+# Best for: Practices that genuinely serve both parent and legal audiences
+# Name: Brainworkup Institute (parent brand)
+#   Sub-brands: Brainworkup Pediatric / Brainworkup Forensic
+# Tagline: Neuropsychological assessment across the lifespan
+#
+# NOTE: This is the PARENT brand. The color palette includes both "warm"
+# and "authority" color sets. For audience-specific Quarto pages, override
+# primary/secondary in the page YAML front matter or use CSS classes.
+#
+# Pediatric pages: use teal + coral (warm set)
+# Forensic pages: use navy + gold (authority set)
+# Shared: charcoal body text, same typography throughout
+# ============================================================================
+
+meta:
+  name:
+    full: "Brainworkup Institute"
+    short: "Brainworkup"
+  link:
+    home: https://brainworkup.org
+    github: https://github.com/brainworkup
+
+logo:
+  images:
+    logo-light: logos/logo-transparent.png
+    logo-dark: logos/logo-transparent.png
+    favicon: logos/favicon.png
+  small: favicon
+  medium: logo-light
+  large: logo-light
+
+color:
+  palette:
+    # === WARM SET (pediatric-facing pages) ===
+    teal: "#2A9D8F"
+    teal-light: "#5FC4B8"
+    teal-dark: "#1E7A6E"
+    coral: "#E07A5F"
+    coral-light: "#F0A08A"
+    coral-dark: "#C4583F"
+    cream: "#FAF3E0"
+    sand: "#F0E6CE"
+
+    # === AUTHORITY SET (forensic-facing pages) ===
+    navy: "#1B365D"
+    navy-light: "#2B5090"
+    navy-dark: "#0F2240"
+    gold: "#C9A94E"
+    gold-light: "#DEC374"
+    gold-dark: "#A68B32"
+    ivory: "#FFFDF5"
+    parchment: "#F7F2E6"
+
+    # === SHARED NEUTRALS ===
+    white: "#FFFFFF"
+    ice: "#F5F7FA"
+    silver: "#E8ECF0"
+    gray: "#6B7B8D"
+    slate: "#4A6670"
+    charcoal: "#2D2D2D"
+    black: "#1A1A1A"
+
+  # Default: balanced — uses navy primary + teal secondary
+  # This is a neutral default; override per-page for audience targeting
+  foreground: charcoal
+  background: white
+  primary: navy
+  secondary: teal
+  tertiary: gray
+  success: "#4CAF50"
+  info: teal-light
+  warning: gold
+  danger: coral-dark
+  light: ice
+  dark: navy-dark
+
+typography:
+  fonts:
+    # Atkinson Hyperlegible: designed for accessibility — readable at all sizes
+    # Perfect for a practice serving children AND legal professionals
+    - family: Atkinson Hyperlegible Next
+      source: google
+      weight: [200, 300, 400, 500, 600, 700, 800]
+      style: [normal, italic]
+      display: swap
+    # Merriweather: scholarly serif for headings — bridges both audiences
+    - family: Merriweather
+      source: google
+      weight: [300, 400, 700, 900]
+      style: [normal, italic]
+      display: swap
+    - family: JetBrains Mono
+      source: google
+      weight: [400, 500]
+      style: normal
+      display: swap
+  base:
+    family: Atkinson Hyperlegible Next
+    size: 16px
+    weight: 400
+    line-height: 1.65
+  headings:
+    family: Merriweather
+    weight: 700
+    line-height: 1.25
+    style: normal
+    color: navy
+  monospace:
+    family: JetBrains Mono
+    size: 0.85em
+    weight: 400
+  monospace-inline:
+    family: JetBrains Mono
+    size: 0.85em
+    weight: 400
+    color: navy
+    background-color: ice
+  monospace-block:
+    family: JetBrains Mono
+    size: 0.9em
+    weight: 400
+    color: charcoal
+    background-color: ice
+    line-height: 1.5
+  link:
+    weight: 500
+    color: teal
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      # Expose all named colors as Sass variables for page-level overrides
+      brand-teal: "$brand-teal"
+      brand-coral: "$brand-coral"
+      brand-navy: "$brand-navy"
+      brand-gold: "$brand-gold"

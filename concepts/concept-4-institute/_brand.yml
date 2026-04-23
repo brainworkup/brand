@@ -1,0 +1,113 @@
+# ============================================================================
+# Concept 4: "The Institute" — Mixed (leaning academic)
+# ============================================================================
+# Tone: Institutional, research-backed, bridges clinic and academy
+# Best for: Legal referrals, academic partnerships, hospital systems
+# Name: Brainworkup Institute
+# Tagline: Neuropsychological science in practice
+# ============================================================================
+
+meta:
+  name:
+    full: "Brainworkup Institute"
+    short: "BWI"
+  link:
+    home: https://brainworkup.org
+    github: https://github.com/brainworkup
+
+logo:
+  images:
+    logo-light: logos/logo-transparent.png
+    logo-dark: logos/logo-transparent.png
+    favicon: logos/favicon.png
+  small: favicon
+  medium: logo-light
+  large: logo-light
+
+color:
+  palette:
+    # Primary: institutional burgundy — gravitas, authority, warmth
+    burgundy: "#6B2737"
+    burgundy-light: "#8C3A4F"
+    burgundy-dark: "#4E1C28"
+    # Accent: academic gold — prestige, excellence
+    gold: "#C9A94E"
+    gold-light: "#DEC374"
+    gold-dark: "#A68B32"
+    # Neutrals: warm, ivory-based
+    ivory: "#FFFDF5"
+    parchment: "#F7F2E6"
+    warm-gray: "#9E9485"
+    charcoal: "#2D2D2D"
+    espresso: "#3C2415"
+    white: "#FFFFFF"
+    black: "#1A1A1A"
+  foreground: charcoal
+  background: ivory
+  primary: burgundy
+  secondary: gold
+  tertiary: warm-gray
+  success: "#4CAF50"
+  info: gold-light
+  warning: gold
+  danger: "#C0392B"
+  light: parchment
+  dark: burgundy-dark
+
+typography:
+  fonts:
+    # Merriweather: scholarly serif — academic weight without stuffiness
+    - family: Merriweather
+      source: google
+      weight: [300, 400, 700, 900]
+      style: [normal, italic]
+      display: swap
+    # Open Sans: clean complement to Merriweather — readable, neutral
+    - family: Open Sans
+      source: google
+      weight: [300, 400, 500, 600, 700]
+      style: [normal, italic]
+      display: swap
+    - family: Fira Code
+      source: google
+      weight: [400, 500]
+      style: normal
+      display: swap
+  base:
+    family: Open Sans
+    size: 16px
+    weight: 400
+    line-height: 1.65
+  headings:
+    family: Merriweather
+    weight: 700
+    line-height: 1.25
+    style: normal
+    color: burgundy
+  monospace:
+    family: Fira Code
+    size: 0.85em
+    weight: 400
+  monospace-inline:
+    family: Fira Code
+    size: 0.85em
+    weight: 400
+    color: burgundy
+    background-color: parchment
+  monospace-block:
+    family: Fira Code
+    size: 0.9em
+    weight: 400
+    color: charcoal
+    background-color: parchment
+    line-height: 1.5
+  link:
+    weight: 400
+    color: burgundy-light
+    decoration: underline
+
+defaults:
+  bootstrap:
+    defaults:
+      brand-burgundy: "$brand-burgundy"
+      brand-gold: "$brand-gold"
