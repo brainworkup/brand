@@ -1,5 +1,5 @@
 ---
-title: "Brainworkup Brand Preview"
+title: "brainworkup brand preview"
 subtitle: "Drop any concept's _brand.yml into this directory and render"
 author: "Joey Trampush, PhD"
 date: today
@@ -11,9 +11,9 @@ format:
     embed-resources: true
 ---
 
-## About Brainworkup
+## About brainworkup
 
-Brainworkup is a clinical neuropsychology practice specializing in **pediatric** and **forensic** neuropsychological assessment, founded by Dr. Joey Trampush.
+brainworkup is a clinical neuropsychology practice specializing in **pediatric** and **forensic** neuropsychological assessment, founded by Dr. Joey Trampush.
 With over 20 years of experience in clinical neuropsychology and a faculty appointment at USC Keck School of Medicine, Dr. Trampush bridges rigorous academic research with compassionate clinical care.
 
 ## Clinical Services

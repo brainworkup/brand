@@ -16,7 +16,7 @@
 
 ### Basic Integration
 
-To use the Brainworkup brand system in your Quarto project, copy the `_brand.yml` file to your project root directory:
+To use the brainworkup brand system in your Quarto project, copy the `_brand.yml` file to your project root directory:
 
 ```bash
 # Clone or download this repository
@@ -84,7 +84,7 @@ Reference brand colors in custom CSS or HTML:
 Include brand logos in your content:
 
 ```markdown
-![Brainworkup Logo](assets/logos/brainworkup-logo.svg){.brand-logo}
+![brainworkup logo](assets/logos/brainworkup-logo.svg){.brand-logo}
 ```
 
 ### Customization
@@ -205,7 +205,7 @@ After installation, verify the brand system is properly configured:
    quarto render --to html
    ```
 
-If successful, your documents should now use the Brainworkup brand styling and assets.
+If successful, your documents should now use the brainworkup brand styling and assets.
 
 ## License
 
@@ -259,7 +259,7 @@ brand/
 
 ## Configuration
 
-The Brainworkup brand system is configured through a central `_brand.yml` file that defines all brand elements for use across Quarto projects. This configuration follows Quarto's brand system specification and provides a single source of truth for all brand assets and styling.
+The brainworkup brand system is configured through a central `_brand.yml` file that defines all brand elements for use across Quarto projects. This configuration follows Quarto's brand system specification and provides a single source of truth for all brand assets and styling.
 
 ### Core Configuration File
 
@@ -282,7 +282,7 @@ brand:
   
   logo:
     path: "assets/logo/brainworkup-logo.svg"
-    alt: "Brainworkup Logo"
+    alt: "brainworkup logo"
   
   # Additional brand configurations...
 ```

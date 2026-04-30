@@ -177,7 +177,7 @@ content_body <- readLines(content_file, warn = FALSE)
 # ---------------------------------------------------------------------------
 
 total <- length(concepts) * length(formats)
-cli_h1("Brainworkup Brand Matrix Render")
+cli_h1("brainworkup Brand Matrix Render")
 cli_alert_info(
   "Rendering {total} files: {length(concepts)} concepts x {length(formats)} formats"
 )
@@ -213,7 +213,7 @@ for (concept in concepts) {
 
     # Build YAML front matter
     yaml_list <- list(
-      title = "Brainworkup Brand Preview",
+      title = "brainworkup brand preview",
       subtitle = concept_labels[[concept]],
       author = "Joey Trampush, PhD",
       date = "today"

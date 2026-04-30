@@ -1,7 +1,18 @@
 {
-  "folders": [
-    {
-      "path": ".",
-    },
-  ],
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Vira Anthracite",
+		"workbench.productIconTheme": "x",
+		"workbench.iconTheme": "vira-icons-clay",
+		"viraTheme.contrastedTabs": true,
+		"viraTheme.hidesShadows": true,
+		"viraTheme.showBorders": false,
+		"viraTheme.solidLineHighlight": true,
+		"viraTheme.useOutlinedIcons": false,
+		"viraTheme.useTopTabIndicator": true
+	}
 }

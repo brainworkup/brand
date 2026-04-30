@@ -1,16 +1,16 @@
-# Brainworkup Neuropsychology — Brand Voice Guide
+# brainworkup — Brand Voice Guide
 
-**Version:** 1.0
-**Last updated:** March 27, 2026
-**Owner:** Dr. Joey Trampush, PhD
+**Version:** 1.1.0
+**Last updated:** 2026-04-29
+**Owner:** Joey Trampush, PhD
 
 ---
 
 ## 1. Brand Personality
 
-If Brainworkup Neuropsychology were a person, it would be a **trusted authority figure** — the kind of clinician-scientist who makes you feel confident that your child is in the most capable hands, and then takes the time to make sure you understand exactly what they found and what to do next.
+If `brainworkup` were a person, it would be a **trusted authority figure** — the kind of clinician-scientist who makes you feel confident that your child is in the most capable hands, and then takes the time to make sure you understand exactly what they found and what to do next.
 
-Brainworkup carries deep academic credibility (USC Keck School of Medicine, 20+ years of experience, NIH-funded research) without ever wielding it as a barrier. The credentials are there to reassure, not to intimidate. When a parent walks in feeling overwhelmed, Brainworkup's voice says: *"We've seen this before. Let me show you what the data tells us and what it means for your child."*
+`brainworkup` carries deep academic credibility (USC Keck School of Medicine, 20+ years of experience, NIH-funded research) without ever wielding it as a barrier. The credentials are there to reassure, not to intimidate. When a parent walks in feeling overwhelmed, brainworkup's voice says: *"We've seen this before. Let me show you what the data tells us and what it means for your child."*
 
 In forensic contexts, the personality shifts to a **meticulous expert witness** — precise, measured, and unimpeachable. The warmth recedes; the rigor comes forward. Every word carries evidentiary weight.
 
@@ -74,7 +74,7 @@ In forensic contexts, the personality shifts to a **meticulous expert witness** 
 - They expect formal, objective, evidence-based reporting.
 - They need clear opinions stated within a reasonable degree of neuropsychological certainty.
 
-**Academic and research colleagues** who encounter Brainworkup through publications, conferences, or collaboration.
+**Academic and research colleagues** who encounter brainworkup through publications, conferences, or collaboration.
 
 - They expect disciplinary rigor and methodological sophistication.
 - They appreciate when complex findings are communicated clearly, even within technical writing.
@@ -85,19 +85,19 @@ In forensic contexts, the personality shifts to a **meticulous expert witness** 
 
 Listed in order of priority:
 
-**1. Clinical expertise grounded in science.** Brainworkup bridges academic research and clinical practice. Evaluations are informed by the latest findings in cognitive genomics, psychiatric genetics, and neurodevelopment — not just clinical convention.
+**1. Clinical expertise grounded in science.** brainworkup bridges academic research and clinical practice. Evaluations are informed by the latest findings in cognitive genomics, psychiatric genetics, and neurodevelopment — not just clinical convention.
 
 **2. Evaluations that lead to action.** A neuropsychological report is only as valuable as what families and providers can do with it. Every evaluation produces specific, practical recommendations tailored to the individual child.
 
-**3. Respect for the developing mind.** Children are not small adults. Brainworkup specializes in pediatric populations because developmental context fundamentally changes how cognitive and emotional data should be interpreted.
+**3. Respect for the developing mind.** Children are not small adults. brainworkup specializes in pediatric populations because developmental context fundamentally changes how cognitive and emotional data should be interpreted.
 
-**4. Dual expertise in clinical and forensic neuropsychology.** Brainworkup serves both families seeking understanding and legal proceedings requiring expert rigor. This dual competency reflects the breadth and depth of Dr. Trampush's training and experience.
+**4. Dual expertise in clinical and forensic neuropsychology.** brainworkup serves both families seeking understanding and legal proceedings requiring expert rigor. This dual competency reflects the breadth and depth of Dr. Trampush's training and experience.
 
 ---
 
 ## 5. Tone Spectrum
 
-Brainworkup's voice attributes remain constant. The **tone** — the emotional inflection — shifts significantly depending on context.
+brainworkup's voice attributes remain constant. The **tone** — the emotional inflection — shifts significantly depending on context.
 
 ### Pediatric / Family Context
 
@@ -173,6 +173,17 @@ Publications, conference presentations, and research communications follow disci
 | Dates | Month DD, YYYY | "March 27, 2026" |
 | Time | 12-hour with AM/PM | "2:30 PM" |
 | List items | Periods on complete sentences; no periods on fragments | |
+
+### Brand Wordmark
+
+The wordmark is **brainworkup** — always lowercase, always one word, no qualifiers ("Institute," "Neuropsychology," etc.). The lowercase styling is intentional, in the spirit of `bell hooks`, `thoughtbot`, and `deadmau5`: it signals approachability and modernity, distinct from the formality of the clinical work itself.
+
+- Use lowercase even at the start of a sentence: "brainworkup specializes in pediatric and forensic neuropsychology."
+- Never write "Brainworkup," "Brainworkup Institute," or "Brainworkup Neuropsychology."
+- The only acceptable capitalization exception: when an external system mechanically uppercases all input (e.g., legal cover sheets, ALL-CAPS form fields). When in doubt, push back and keep the lowercase.
+- In running prose where lowercase-at-sentence-start would genuinely confuse the reader, restructure the sentence rather than capitalizing — e.g., "At brainworkup, we…" instead of "Brainworkup is…"
+- Possessive: `brainworkup's` (lowercase, normal apostrophe-s).
+- The legal/practitioner-of-record name remains "Joey Trampush, PhD" — that capitalization rule is unchanged.
 
 ### Formatting Conventions
 
@@ -255,12 +266,14 @@ Publications, conference presentations, and research communications follow disci
 The brand voice guide works alongside these visual identity elements:
 
 **Color system (Dual Identity):**
+
 - Warm palette (pediatric): Teal (#2A9D8F), Coral (#E07A5F), Cream (#FAF3E0)
 - Authority palette (forensic/academic): Navy (#1B365D), Gold (#C9A94E), Ivory (#FFFDF5)
 - Shared neutrals: Charcoal (#2D2D2D), Slate (#4A6670), Ice (#F5F7FA)
 
 **Typography:**
-- Headings: Merriweather (serif) — conveys authority and tradition
+
+- Headings: Merriweather (serif) — scholarly, conveys authority and tradition
 - Body: Atkinson Hyperlegible Next (sans-serif) — prioritizes legibility and accessibility
 - Code/data: JetBrains Mono — clean monospace for clinical data display
 

@@ -124,7 +124,7 @@
 
 **Color palettes:**
 - Pediatric: Teal (#2A9D8F), coral (#E07A5F), cream (#FAF3E0)
-- Forensic: Navy (#1B365D), gold (#C9A94E), white (#FFFFFF)
+- Forensic: Navy (#1B365D), gold (#C9A94E), ivory (#FFFDF5)
 - Shared: Charcoal (#2D2D2D) for body text
 
 **Tone:** This is the "have it both ways" option. A parent landing on the pediatric path sees warmth, developmental language, and reassurance. An attorney landing on the forensic path sees credentials, methodology, and precision. Both paths lead to the same clinician, but the framing matches the audience.

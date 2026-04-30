@@ -1,26 +1,3 @@
 project:
   type: default
   title: "brand"
-  execute-dir: project
-
-execute:
-  warning: false
-  echo: false
-  eval: true
-  message: false
-  freeze: auto
-  cache: true
-  tools:
-    r: "/usr/local/bin/R"
-
-editor:
-  markdown:
-    wrap: sentence
-    canonical: true
-fig-width: 6
-fig-asp: 0.618
-out-width: 70%
-fig-align: center
-fig-format: svg
-fig-dpi: 270
-df-print: kable

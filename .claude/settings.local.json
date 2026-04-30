@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/generate_docx_refs.py concept-7-dual-identity)"
+    ]
+  }
+}

@@ -3,8 +3,7 @@
 # ============================================================================
 # Tone: Adapts to audience — warm for pediatric, authoritative for forensic
 # Best for: Practices that genuinely serve both parent and legal audiences
-# Name: Brainworkup Institute (parent brand)
-#   Sub-brands: Brainworkup Pediatric / Brainworkup Forensic
+# Name: brainworkup (always lowercase, deadmau5/bell hooks rule)
 # Tagline: Neuropsychological assessment across the lifespan
 #
 # NOTE: This is the PARENT brand. The color palette includes both "warm"
@@ -18,8 +17,8 @@
 
 meta:
   name:
-    full: "Brainworkup Institute"
-    short: "Brainworkup"
+    full: "brainworkup"
+    short: "brainworkup"
   link:
     home: https://brainworkup.org
     github: https://github.com/brainworkup
