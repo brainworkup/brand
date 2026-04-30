@@ -23,6 +23,7 @@ from docx.oxml.ns import qn, nsdecls
 from docx.oxml import parse_xml
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+CONCEPTS_DIR = SCRIPT_DIR.parent / "concepts"
 
 CONCEPTS = [
     "concept-1-growing-minds",
@@ -59,8 +60,19 @@ def load_brand(concept_dir: Path) -> dict:
 
     # Resolve top-level color references
     color = brand.get("color", {})
-    for key in ["foreground", "background", "primary", "secondary", "tertiary",
-                "success", "info", "warning", "danger", "light", "dark"]:
+    for key in [
+        "foreground",
+        "background",
+        "primary",
+        "secondary",
+        "tertiary",
+        "success",
+        "info",
+        "warning",
+        "danger",
+        "light",
+        "dark",
+    ]:
         if key in color:
             color[key] = resolve_color(color[key], palette)
 
@@ -77,8 +89,13 @@ def load_brand(concept_dir: Path) -> dict:
     return brand
 
 
-def set_style_font(style, font_family: str, size_pt: float = None,
-                   bold: bool = None, color: RGBColor = None):
+def set_style_font(
+    style,
+    font_family: str,
+    size_pt: float = None,
+    bold: bool = None,
+    color: RGBColor = None,
+):
     """Configure font properties on a Word style."""
     font = style.font
     font.name = font_family
@@ -94,11 +111,13 @@ def set_style_font(style, font_family: str, size_pt: float = None,
     for tag in [qn("w:rFonts")]:
         el = rpr.find(tag)
         if el is None:
-            el = parse_xml(f'<w:rFonts {nsdecls("w")} '
-                           f'w:ascii="{font_family}" '
-                           f'w:hAnsi="{font_family}" '
-                           f'w:eastAsia="{font_family}" '
-                           f'w:cs="{font_family}"/>')
+            el = parse_xml(
+                f"<w:rFonts {nsdecls('w')} "
+                f'w:ascii="{font_family}" '
+                f'w:hAnsi="{font_family}" '
+                f'w:eastAsia="{font_family}" '
+                f'w:cs="{font_family}"/>'
+            )
             rpr.insert(0, el)
         else:
             el.set(qn("w:ascii"), font_family)
@@ -107,8 +126,9 @@ def set_style_font(style, font_family: str, size_pt: float = None,
             el.set(qn("w:cs"), font_family)
 
 
-def set_paragraph_spacing(style, before_pt: float = None, after_pt: float = None,
-                          line_spacing: float = None):
+def set_paragraph_spacing(
+    style, before_pt: float = None, after_pt: float = None, line_spacing: float = None
+):
     """Set paragraph spacing on a style."""
     pf = style.paragraph_format
     if before_pt is not None:
@@ -135,7 +155,7 @@ def parse_size(size_str) -> float:
 
 def generate_reference_docx(concept_name: str):
     """Generate a reference.docx for the given concept."""
-    concept_dir = SCRIPT_DIR / concept_name
+    concept_dir = CONCEPTS_DIR / concept_name
     brand = load_brand(concept_dir)
 
     color = brand.get("color", {})
@@ -174,7 +194,9 @@ def generate_reference_docx(concept_name: str):
     # -- Default style (Normal) --
     normal = doc.styles["Normal"]
     set_style_font(normal, base_font, base_size, color=fg_color)
-    set_paragraph_spacing(normal, before_pt=0, after_pt=6, line_spacing=base_line_height)
+    set_paragraph_spacing(
+        normal, before_pt=0, after_pt=6, line_spacing=base_line_height
+    )
 
     # -- Headings --
     heading_sizes = {
@@ -191,14 +213,19 @@ def generate_reference_docx(concept_name: str):
         except KeyError:
             continue
         set_style_font(style, heading_font, size, bold=True, color=heading_color)
-        set_paragraph_spacing(style, before_pt=12, after_pt=4,
-                              line_spacing=typo.get("headings", {}).get("line-height", 1.2))
+        set_paragraph_spacing(
+            style,
+            before_pt=12,
+            after_pt=4,
+            line_spacing=typo.get("headings", {}).get("line-height", 1.2),
+        )
 
     # -- Title --
     try:
         title_style = doc.styles["Title"]
-        set_style_font(title_style, heading_font, base_size * 2.4, bold=True,
-                       color=primary_color)
+        set_style_font(
+            title_style, heading_font, base_size * 2.4, bold=True, color=primary_color
+        )
         set_paragraph_spacing(title_style, before_pt=0, after_pt=4, line_spacing=1.1)
     except KeyError:
         pass
@@ -206,17 +233,21 @@ def generate_reference_docx(concept_name: str):
     # -- Subtitle --
     try:
         subtitle_style = doc.styles["Subtitle"]
-        set_style_font(subtitle_style, base_font, base_size * 1.3, bold=False,
-                       color=heading_color)
-        set_paragraph_spacing(subtitle_style, before_pt=0, after_pt=12, line_spacing=1.3)
+        set_style_font(
+            subtitle_style, base_font, base_size * 1.3, bold=False, color=heading_color
+        )
+        set_paragraph_spacing(
+            subtitle_style, before_pt=0, after_pt=12, line_spacing=1.3
+        )
     except KeyError:
         pass
 
     # -- Block Quote --
     try:
         bq = doc.styles["Quote"]
-        set_style_font(bq, base_font, base_size, color=hex_to_rgb(
-            color.get("tertiary", fg_hex)))
+        set_style_font(
+            bq, base_font, base_size, color=hex_to_rgb(color.get("tertiary", fg_hex))
+        )
         bq.font.italic = True
         pf = bq.paragraph_format
         pf.left_indent = Inches(0.5)
@@ -267,13 +298,13 @@ def generate_reference_docx(concept_name: str):
     # Table placeholder
     table = doc.add_table(rows=2, cols=3, style="Table Grid")
     for i, cell in enumerate(table.rows[0].cells):
-        cell.text = f"Header {i+1}"
+        cell.text = f"Header {i + 1}"
         for paragraph in cell.paragraphs:
             for run in paragraph.runs:
                 run.font.bold = True
                 run.font.color.rgb = primary_color
     for i, cell in enumerate(table.rows[1].cells):
-        cell.text = f"Data {i+1}"
+        cell.text = f"Data {i + 1}"
 
     # -- Save --
     out_path = concept_dir / "reference.docx"
@@ -290,7 +321,7 @@ def main():
 
     print(f"Generating {len(concepts)} reference.docx templates...\n")
     for concept in concepts:
-        concept_dir = SCRIPT_DIR / concept
+        concept_dir = CONCEPTS_DIR / concept
         if not (concept_dir / "_brand.yml").exists():
             print(f"  ✗ {concept}/_brand.yml not found, skipping")
             continue

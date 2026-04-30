@@ -23,14 +23,15 @@ meta:
     home: https://brainworkup.org
     github: https://github.com/brainworkup
 
-logo:
-  images:
-    logo-light: logos/logo-transparent.png
-    logo-dark: logos/logo-transparent.png
-    favicon: logos/favicon.png
-  small: favicon
-  medium: logo-light
-  large: logo-light
+# Logo images disabled - Typst has path resolution issues with nested directories
+# and automatically applies logos as page backgrounds, causing absolute path errors.
+# If logo display is needed, add manually via include-in-header instead.
+# logo:
+#   images:
+#     logo-light: logos/logo-transparent.png
+#     logo-dark: logos/logo-transparent.png
+#   medium: logo-light
+#   large: logo-light
 
 color:
   palette:

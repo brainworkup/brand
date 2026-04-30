@@ -1,0 +1,86 @@
+
+## About Brainworkup
+
+Brainworkup is a clinical neuropsychology practice specializing in **pediatric** and **forensic** neuropsychological assessment, founded by Dr. Joey Trampush.
+With over 20 years of experience in clinical neuropsychology and a faculty appointment at USC Keck School of Medicine, Dr. Trampush bridges rigorous academic research with compassionate clinical care.
+
+## Clinical Services
+
+### Pediatric Neuropsychological Assessment
+
+Comprehensive evaluations for children and adolescents addressing concerns related to attention, learning, memory, executive functioning, and emotional regulation.
+Each assessment produces a detailed, actionable report designed for parents, educators, and treatment providers.
+
+### Forensic Neuropsychology
+
+Expert neuropsychological evaluations for legal proceedings, including personal injury litigation, criminal defense, and educational due process hearings.
+Reports meet evidentiary standards and Dr. Trampush is available for deposition and trial testimony.
+
+## Research & Publications
+
+Dr. Trampush's research focuses on the intersection of **psychiatric genetics**, **cognitive genomics**, and **neurodevelopment**, with particular emphasis on ADHD.
+Key areas include:
+
+-   Genome-wide association studies (GWAS) of neurocognitive phenotypes
+-   Polygenic risk scoring for cognitive and psychiatric outcomes
+-   Neurodevelopmental trajectories in attention-deficit/hyperactivity disorder
+
+## Contact Information
+
+::: callout-note
+## Schedule an Evaluation
+
+To schedule a neuropsychological evaluation or request a consultation, please visit [brainworkup.org](https://brainworkup.org) or contact our office directly.
+:::
+
+## Sample Data Display
+
+Here is an example of how clinical data might be presented:
+
+| Domain               | Standard Score | Percentile | Classification |
+|----------------------|----------------|------------|----------------|
+| Verbal Comprehension | 112            | 79th       | High Average   |
+| Visual Spatial       | 105            | 63rd       | Average        |
+| Fluid Reasoning      | 118            | 88th       | High Average   |
+| Working Memory       | 95             | 37th       | Average        |
+| Processing Speed     | 88             | 21st       | Low Average    |
+
+: Example Cognitive Profile {.striped .hover}
+
+## Code Example
+
+For colleagues working with neuropsychological data in R:
+
+```{r}
+#| eval: false
+#| echo: true
+
+# Compute composite scores from subtest data
+library(dplyr)
+
+npsych_data |>
+  group_by(patient_id) |>
+  summarise(
+    verbal_composite = mean(c(similarities, vocabulary, information)),
+    executive_composite = mean(c(trails_b, wcst_persev, stroop_cw)),
+    memory_composite = mean(c(cvlt_total, rocf_delay, lm_delay))
+  )
+```
+
+## Typography Showcase
+
+This section demonstrates how the brand typography renders across different elements.
+
+### Heading Level 3
+
+#### Heading Level 4
+
+**Bold text** for emphasis.
+*Italic text* for technical terms like *neuropsychological assessment* or *executive functioning*.
+Inline code like `WISC-V` or `ADHD-RS-5` for test names and measures.
+
+> "The goal of neuropsychological assessment is not merely to assign scores, but to understand the developing mind in context."
+
+---
+
+*Preview generated for brand comparison purposes.*

@@ -18,3 +18,7 @@ brand.yml.zip
 
 # README.md
 README.md
+scripts/output/
+output/_qmd/html-concept-3-clinical-modern.qmd
+.gitignore
+.Rapp.history

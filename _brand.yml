@@ -32,17 +32,18 @@ meta:
 
 logo:
   images:
-    icon: logos/logo.png
+    # icon: logos/logo.png
     logo-light: logos/logo-transparent.png
     logo-dark: logos/logo-transparent.png
     favicon: logos/favicon.png
-    header: logos/header-logo.png
-    header-white: logos/header-logo-white.png
-    full: logos/full-logo.svg
-  small: favicon
-  medium:
-    light: header
-    dark: header-white
+    # header: logos/header-logo.png
+    # header-white: logos/header-logo-white.png
+    # full: logos/full-logo.svg
+    # small: favicon
+  medium: light-logo
+  # medium:
+  # light: header
+  # dark: header-white
   large: logo-light
 
 color:
