@@ -20,10 +20,10 @@ To use the brainworkup brand system in your Quarto project, copy the `_brand.yml
 
 ```bash
 # Clone or download this repository
-git clone https://github.com/your-org/brainworkup-brand-system.git
+git clone https://github.com/brainworkup/brand.git
 
 # Copy the brand configuration to your project
-cp brainworkup-brand-system/_brand.yml /path/to/your/quarto-project/
+cp brainworkup/_brand.yml /path/to/your/quarto-project/
 ```
 
 ### Project Setup
@@ -45,10 +45,10 @@ cp brainworkup-brand-system/_brand.yml /path/to/your/quarto-project/
 
    ```bash
    # Copy logos and images to your project
-   cp -r brainworkup-brand-system/assets/ /path/to/your/project/assets/
+   cp -r brainworkup/assets/ /path/to/your/project/assets/
    
    # Copy custom CSS (optional)
-   cp brainworkup-brand-system/styles/custom.css /path/to/your/project/styles/
+   cp brainworkup/styles/custom.css /path/to/your/project/styles/
    ```
 
 ### Available Brand Elements
@@ -84,7 +84,7 @@ Reference brand colors in custom CSS or HTML:
 Include brand logos in your content:
 
 ```markdown
-![brainworkup logo](assets/logos/brainworkup-logo.svg){.brand-logo}
+![brainworkup logo](assets/logos/logo.svg){.brand-logo}
 ```
 
 ### Customization
@@ -144,7 +144,7 @@ format:
 1. **Download the brand files**
 
    ```bash
-   curl -L https://github.com/brainworkup/brand-system/archive/main.zip -o brainworkup-brand.zip
+   curl -L https://github.com/brainworkup/brand/archive/main.zip -o brainworkup-brand.zip
    unzip brainworkup-brand.zip
    ```
 
