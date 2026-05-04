@@ -151,8 +151,8 @@ format:
 2. **Copy brand files to your project**
 
    ```bash
-   cp brainworkup-brand-system-main/_brand.yml /path/to/your-quarto-project/
-   cp -r brainworkup-brand-system-main/_brand/ /path/to/your-quarto-project/
+   cp brainworkup-brand-main/_brand.yml /path/to/your-quarto-project/
+   cp -r brainworkup-brand-main/_brand/ /path/to/your-quarto-project/
    ```
 
 ### Method 2: Git Clone
@@ -160,8 +160,8 @@ format:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/brainworkup/brand-system.git
-   cd brand-system
+   git clone https://github.com/brainworkup/brand.git
+   cd brand
    ```
 
 2. **Copy brand files to your project**
@@ -177,20 +177,20 @@ format:
 
    ```bash
    cd /path/to/your-quarto-project
-   git submodule add https://github.com/brainworkup/brand-system.git _brand-system
+   git submodule add https://github.com/brainworkup/brand.git _brand
    ```
 
 2. **Symlink the brand files**
 
    ```bash
-   ln -s _brand-system/_brand.yml _brand.yml
-   ln -s _brand-system/_brand/ _brand
+   ln -s _brand/_brand.yml _brand.yml
+   ln -s _brand/_brand/ _brand
    ```
 
 3. **Update submodule when needed**
 
    ```bash
-   git submodule update --remote _brand-system
+   git submodule update --remote _brand
    ```
 
 ### Verification
@@ -315,7 +315,7 @@ Update asset paths in `_brand.yml` to match your project structure:
 ```yaml
 # If assets are in a subdirectory
 logo:
-  path: "brand-assets/logo/brainworkup-logo.svg"
+  path: "brand/assets/logo/brainworkup-logo.svg"
 
 # If using absolute URLs
 logo:
