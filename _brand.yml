@@ -32,19 +32,19 @@ meta:
 
 logo:
   images:
-    icon: logos/1759037996.png
-    logo-light: logos/1759037996.png
-    logo-dark: logos/logos/Gemini_Generated_Image_qvjbgiqvjbgiqvjb(1).png
-    favicon: logos/favicon.png
-    header: logos/logo_bwu.png
-    # header-white: logos/header-logo-white.png
-    full: logos/logo.png
-    small: logos/logo_bwu_small.png
-  medium: logos/cool_logo_bwu.png
+    icon: logo/logo-transparent.png
+    logo-light: logo/logo-transparent.png
+    logo-dark: logo/logo-transparent.png
+    favicon: logo/favicon.png
+    header: logo/logo_bwu.png
+    # header-white: logo/header-logo-white.png
+    full: logo/logo.png
+    small: logo/logo_bwu_small.png
+  medium: logo/logo-transparent-384.png #cool_logo_bwu.png
   # medium:
   # light: header
   # dark: header-white
-  large: logos/logo_transparent.png
+  large: logo/logo-transparent.png
 
 color:
   palette:
